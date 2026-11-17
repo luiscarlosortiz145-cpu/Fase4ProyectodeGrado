@@ -1,0 +1,29 @@
+:root { --azul:#1d4ed8; --gris:#475569; --borde:#cbd5e1; --fondo:#f1f5f9; }
+* { box-sizing: border-box; }
+body { margin:0; font-family: system-ui, Arial, sans-serif; background:var(--fondo); color:#0f172a; }
+main { max-width: 960px; margin: 16px auto; padding: 0 16px; }
+.barra { display:flex; gap:16px; align-items:center; justify-content:space-between; background:#0f172a; color:#fff; padding:10px 16px; }
+.tarjeta { background:#fff; border:1px solid var(--borde); border-radius:10px; padding:16px; margin-bottom:16px; }
+.login { max-width:380px; margin:10vh auto; }
+h1 { font-size:1.3rem; margin-top:0; } h2 { font-size:1.1rem; margin-top:0; }
+label { display:flex; flex-direction:column; gap:4px; font-size:.9rem; color:var(--gris); }
+label.check { flex-direction:row; align-items:center; gap:8px; }
+input, select { padding:8px; border:1px solid var(--borde); border-radius:6px; font-size:1rem; }
+button { background:var(--azul); color:#fff; border:0; border-radius:6px; padding:9px 14px; font-size:1rem; cursor:pointer; }
+button.secundario { background:#e2e8f0; color:#0f172a; }
+form { display:flex; flex-direction:column; gap:12px; }
+.fila { display:flex; flex-direction:row; flex-wrap:wrap; gap:12px; align-items:flex-end; }
+.filtros { margin-bottom:12px; }
+table { width:100%; border-collapse:collapse; font-size:.95rem; }
+th, td { text-align:left; padding:8px; border-bottom:1px solid var(--borde); }
+.estado { padding:2px 8px; border-radius:999px; font-size:.8rem; background:#e2e8f0; }
+.estado.recibida { background:#fef3c7; } .estado.notificada { background:#dbeafe; } .estado.entregada { background:#dcfce7; }
+.ok { background:#dcfce7; color:#14532d; padding:8px 12px; border-radius:6px; }
+.error { background:#fee2e2; color:#7f1d1d; padding:8px 12px; border-radius:6px; }
+.vacio { color:var(--gris); }
+.fondo { position:fixed; inset:0; background:rgba(15,23,42,.5); display:flex; align-items:center; justify-content:center; padding:16px; }
+.modal p { margin:0; }
+.modal { width:100%; max-width:420px; margin:0; }
+.previa { max-width:100%; max-height:160px; border-radius:6px; }
+.linea { line-height:1.8; }
+@media (max-width:640px){ .fila { flex-direction:column !important; align-items:stretch; } table { font-size:.85rem; } }
