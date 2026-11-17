@@ -11,12 +11,12 @@ trazabilidad completa de cada paquete.
 | 1 | Base de datos y configuración del proyecto | Hecho |
 | 2 | Inicio de sesión por rol y gestión de apartamentos y residentes (RF-01, RF-02) | Hecho |
 | 3 | Registro de encomiendas (RF-03) | Hecho |
-| 4 | Notificación al residente (RF-04) | Parcial: se registra, envío simulado |
+| 4 | Notificación al residente (RF-04) | Hecho: correo real por SMTP (modo simulado disponible) |
 | 5 | Consulta de estado (RF-05) | Hecho (API) |
 | 6 | Confirmación de entrega con soporte (RF-06) | Hecho (API) |
 | 7 | Historial y filtro de pendientes (RF-07, RF-08) | Hecho (API) |
 | 8a | Interfaz web (React): login, portero, residente y administrador | Hecho |
-| 8b | Notificación real, pruebas de usabilidad y despliegue | Pendiente |
+| 8b | Pruebas de usabilidad y despliegue | Pendiente |
 
 ## Tecnologías
 Node.js + Express (API REST), PostgreSQL, JWT para la autenticación, bcrypt para las contraseñas.

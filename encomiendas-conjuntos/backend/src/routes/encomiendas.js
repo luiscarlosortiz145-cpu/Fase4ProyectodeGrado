@@ -47,10 +47,13 @@ router.post('/', permitirRoles('portero'), async (req, res) => {
         canal: 'correo',
         destinatario: d,
         asunto: 'Tienes una encomienda en la portería',
-        mensaje: `Hola ${d.nombre}, llegó una encomienda de ${enc.remitente_transportadora}.`,
+        mensaje:
+          `Hola ${d.nombre},\n\nLlegó una encomienda de ${enc.remitente_transportadora} para tu apartamento. ` +
+          `Puedes recogerla en la portería.\n\nMensaje automático del sistema de encomiendas.`,
       });
       enviadas++;
     } catch (e) {
+      console.error('Error al notificar:', e.message);
       resultado = 'fallido';
     }
     await db.query(
